@@ -26,6 +26,23 @@ header .lnb li a {
   color: #333;
   line-height: 81px;
 }
+header .lnb li a span {
+  position: relative;
+}
+header .lnb li a:hover {
+  color: #2d5b79;
+  font-weight: 600;
+}
+header .lnb li a:hover span:after {
+  position: absolute;
+  left: 0;
+  bottom: -9px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #2d5b79;
+}
 header .spot {
   position: absolute;
   right: 50px;
@@ -45,6 +62,9 @@ header .spot li:after {
   background: #ccc;
   transform: translateY(-50%);
 }
+header .spot li:first-child:after {
+  display: none;
+}
 header .spot li a {
   display: block;
   height: 81px;
@@ -54,7 +74,4 @@ header .spot li a {
 }
 header .spot li:last-child a {
   padding-right: 0;
-}
-header .spot li:first-child:after {
-  display: none;
 }
