@@ -1,0 +1,18 @@
+.visual {
+  position: relative;
+  padding: 0 50px;
+}
+.visual .prev,
+.visual .next {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.visual .con > div {
+  height: 640px;
+}
+.visual .con .slide {
+  background: url(../image/visual.jpg) no-repeat center;
+  background-size: cover;
+}
