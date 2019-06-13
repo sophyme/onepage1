@@ -2,12 +2,20 @@
   position: relative;
   padding: 0 50px;
 }
-.visual .prev,
-.visual .next {
+.visual .prev i,
+.visual .next i {
   display: block;
   position: absolute;
   top: 50%;
+  width: 25px;
+  height: 47px;
   transform: translateY(-50%);
+}
+.visual .prev {
+  left: 32px;
+}
+.visual .next {
+  right: 32px;
 }
 .visual .con > div {
   height: 640px;
